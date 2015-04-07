@@ -1,0 +1,12 @@
+实现对Binder  ioctl的拦截
+在Inject/jni 中使用ndk-build 编译
+adb push ../obj/local/armeabi-v7a/inject /sdcard/
+使用root  cp到/data
+chmod 755 inject
+
+在package/jni 中使用ndk-build 编译
+adb push ../obj/local/armeabi-v7a/libpackage.so /sdcard/
+使用root  cp到/data
+
+最后:
+./inject
