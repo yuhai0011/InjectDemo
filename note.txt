@@ -1,4 +1,4 @@
-实现对Binder  ioctl的拦截
+功能：实现对Binder  ioctl的拦截
 在Inject/jni 中使用ndk-build 编译
 adb push ../obj/local/armeabi-v7a/inject /sdcard/
 使用root  cp到/data
@@ -8,5 +8,11 @@ chmod 755 inject
 adb push ../obj/local/armeabi-v7a/libpackage.so /sdcard/
 使用root  cp到/data
 
-最后:
+最后执行:
 ./inject
+
+可以看到目标进程中输出一条log：
+hook entry
+
+这时我们已经在目标进程了。
+hello, new world!!!
